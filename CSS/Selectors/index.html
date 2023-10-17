@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors | CSS</title>
+    <style>
+        /* Element Selector */
+        p{
+            background-color: blue;
+            color: yellow;
+        }
+        /* Class Selector */
+        .green{
+            background-color: green;
+        }
+        /* Id Selector */
+        #red{
+            background-color: red;
+        }
+        /* Child Selector : Only applies if the element is immediate child, not work if child inside child  */
+        div > p{
+            color: blue;
+            background-color: red;
+        }
+        /* Descendent Selector : Applies to any child */
+        div p{
+            color: orange;
+            background-color: yellow;
+        }
+        /* Universal Selector */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        /* Pseudo Selector */
+        a:visited{
+            color: red;
+        }
+        a:link{
+            color: yellow;
+        }
+        a:hover{
+            background-color: blue;
+        }
+        /* Applies whenever p is first child of parent.  */
+        p:first-child{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>
+            I am first child of div, I will have bgcolor aqua and color orange.
+        </p>
+        <article>
+            <p>
+                I am first child of article so I will have coloe orange and bgcolor aqua.
+            </p>
+            <p>
+                I am p inside a article wich is inside a div and I am not the first child of article, I will have color orange, bgcolor yellow.
+            </p>
+        </article>
+    </div>
+    <article>
+        <p>
+            I am first child I already know my fate :( 
+        </p>
+        <p>
+            I will have blue bgcolor.
+        </p>
+        <p class="green">
+            I want green bg.
+        </p>
+        <p id="red">
+            I want red bg.
+        </p>
+        <a href="http://www.facebook.com">Go to Facebook.</a>
+        <a href="http://www.google.com">Go to Google</a>
+    </article>
+</body>
+</html>
