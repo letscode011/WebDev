@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card design</title>
+    <style>
+        * {
+            margin: 5px;
+            padding: 5px;
+
+        }
+        .bg {
+            background: grey;
+            display: flex;
+            width: 320px;
+            height: 475px;
+            border-radius: 15px;
+
+        }
+        .parentbox {
+            height: 450px;
+            width: 300px;
+            border: 2px solid white;
+            position: relative;
+            border-radius: 10px;
+            background-color: white;
+            /* background-color: black; */
+        }
+        .pic {
+            height: inherit;
+            width: 94%;
+            height: auto;
+            object-fit: contain;
+            position: relative;
+            border-radius: 10px;
+
+        }
+        .desc {
+            /* height: 17px;
+            width:48px; */
+            border: 2px solid;
+            display: inline-block;
+            border-radius: 17px;
+            padding: 8px;
+            margin: 5px;
+            font-size: small;
+
+        }
+        .button {
+            height: 32px;
+            width: 88px;
+            display: flex;
+            border: 2px solid black;
+            border-radius: 15px;
+            background-color: aqua;
+            color: burlywood;
+            /* padding: 8px; */
+            justify-content: center;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="bg">
+        <div class="parentbox">
+            <img class="pic" src="camera.jpg" alt="cardimg">
+            <div class="desc">Nature</div>
+            <div class="desc">Lake</div>
+            <h1>Udaipur</h1>
+            <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure voluptates natus reprehenderit.
+            </div>
+            <button class="button">Read more</button>
+        </div>
+    </div>
+</body>
+</html>

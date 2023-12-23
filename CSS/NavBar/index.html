@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design a Navbar</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /* :root{
+            --color:red;
+            --seccolor:rgb(248, 194, 194);
+        } */
+        :root{
+            --color:rgb(58, 5, 145);
+            --seccolor:rgb(166, 112, 253);
+        }
+        nav{
+            background-color: var(--seccolor, skyblue);
+        }
+        ul li {
+            list-style-type: none;
+            padding: 15px;
+            color: var(--color, blue);
+            /* border: 1px dotted black; */
+            /* border-radius: 15px; */
+            /* margin: 10px; */
+            font-weight: bolder;
+        }
+        ul{
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+</body>
+</html>

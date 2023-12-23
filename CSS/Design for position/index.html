@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garments</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Poppins:wght@200&display=swap');
+      </style>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        :root{
+            --color: rgb(107, 3, 107);
+            --seccolor:  rgb(231, 123, 231);
+            /* --text: 'Poppins', sans-serif; */
+        }
+        header{
+            position: sticky;
+            top: 0;
+        }
+        nav ul{
+            padding: 12px 0;
+            background-color: var(--seccolor);
+        }
+        ul li{
+            display: inline; 
+            list-style: none;
+            font-family: 'Poppins', sans-serif;
+            padding: 23px;
+            color: var(--color);
+            font-weight: bolder;  
+            /* background-color: var(--seccolor); */
+        }
+        li a {
+            text-decoration: none;
+        }
+        .side{
+            width: 40vw;
+            height: 50vh;
+            display: inline-block;
+            margin-left: 50px;
+            margin-top: 25px;
+            margin-bottom: 25px;
+            border: 1px solid black;
+        }
+        #left{
+            background-color: aqua;
+        }
+        #right{
+            background-color: bisque;
+        }
+        .txttbl{
+            height: 60vh;
+            /* width: 100vw; */
+            border: 1px solid black;
+            border-radius: 20px;
+            margin: 50px;
+        }
+        .logo{
+            position: fixed;
+            bottom: 0;
+            right: 0;
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="http://">Home</a></li>
+                <li><a href="http://">About</a></li>
+                <li><a href="http://">Services</a></li>
+                <li><a href="http://">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="side" id="left"></div>
+        <div class="side" id="right"></div>
+        <div class="txttbl"></div>
+        <img class="logo" src="https://img.freepik.com/free-vector/bird-colorful-logo-gradient-vector_343694-1365.jpg" alt="logo" height="100px" width="100px">
+    </main>
+    <footer> Cpyright | All rights reserved</footer>
+</body>
+</html>
