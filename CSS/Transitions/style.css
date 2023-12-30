@@ -1,0 +1,28 @@
+.boxTX:hover {
+    transform: translateX(10mm);
+    cursor: pointer;
+}
+.boxTY:hover {
+    transform: translateY(10mm);
+    cursor: pointer;
+}
+.boxRX:hover {
+    transform: rotateX(70deg);
+    cursor: pointer;
+}
+.boxRY:hover {
+    transform: rotateY(70deg);
+    cursor: pointer;
+}
+.boxRZ:hover {
+    transform: rotateZ(70deg);
+    cursor: pointer;
+}
+.boxSX:hover {
+    transform: skewX(20deg);
+    cursor: pointer;
+}
+.boxSY:hover {
+    transform: skewY(20deg);
+    cursor: pointer;
+}

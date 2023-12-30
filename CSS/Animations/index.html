@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animations</title>
+    <style>
+      .container {
+        height: 80vh;
+        width: 70vw;
+        background-color: bisque;
+        border: 2px solid black;
+      }
+      .box {
+        height: 30px;
+        width: 30px;
+        background-color: aquamarine;
+        animation: Anim1 2s ease-in-out 0.5s infinite;
+      }
+      @keyframes Anim1 {
+        0% {
+          transform: translateY(30mm);
+        }
+        12% {
+          transform: translateX(10mm) translateY(15mm);
+        }
+        25% {
+          transform: translateX(20mm);
+        }
+        36% {
+          transform: translateX(30mm) translateY(15mm);
+        }
+        50% {
+          transform: translateX(40mm) translateY(30mm);
+        }
+        50% {
+          transform: translateX(40mm) translateY(30mm);
+        }
+        50% {
+          transform: translateX(40mm) translateY(30mm);
+        }
+        50% {
+          transform: translateX(40mm) translateY(30mm);
+        }
+        50% {
+          transform: translateX(40mm) translateY(30mm);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box"></div>
+    </div>
+  </body>
+</html>
