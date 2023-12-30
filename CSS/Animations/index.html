@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Animations</title>
+    <title>Bounce animation</title>
     <style>
       .container {
         height: 80vh;
@@ -14,8 +14,11 @@
       .box {
         height: 30px;
         width: 30px;
-        background-color: aquamarine;
-        animation: Anim1 2s ease-in-out 0.5s infinite;
+        border: none;
+        border-radius: 15px;
+        background-color: rgb(149, 206, 212);
+        animation: Anim1 1s ease-out 0.5s infinite;
+        
       }
       @keyframes Anim1 {
         0% {
@@ -25,25 +28,25 @@
           transform: translateX(10mm) translateY(15mm);
         }
         25% {
-          transform: translateX(20mm);
+          transform: translateX(20mm) translateY(10mm);
         }
         36% {
-          transform: translateX(30mm) translateY(15mm);
+          transform: translateX(28mm) translateY(15mm);
         }
         50% {
-          transform: translateX(40mm) translateY(30mm);
+          transform: translateX(38mm) translateY(30mm);
         }
-        50% {
-          transform: translateX(40mm) translateY(30mm);
+        62% {
+          transform: translateX(45mm) translateY(20mm);
         }
-        50% {
-          transform: translateX(40mm) translateY(30mm);
+        75% {
+          transform: translateX(54mm) translateY(17mm);
         }
-        50% {
-          transform: translateX(40mm) translateY(30mm);
+        88% {
+          transform: translateX(62mm) translateY(20mm);
         }
-        50% {
-          transform: translateX(40mm) translateY(30mm);
+        100% {
+          transform: translateX(70mm) translateY(30mm);
         }
       }
     </style>
