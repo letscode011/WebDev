@@ -27,23 +27,46 @@
         color: white;
         border: none;
         border-radius: 5px;
+        cursor: pointer;
+        font-size: 10px;
+        font-weight: 700;
       }
       .button64 {
         background-color: greenyellow;
         color: white;
         border: none;
         border-radius: 5px;
+        cursor: pointer;
+        font-size: 10px;
+
+        font-weight: 700;
       }
+      .desc{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 50vw;
+        margin: auto;
+        text-align: center;
+      }
+      .desc span{
+        font-size: 35px;
+      }
+
       .grid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         justify-items: center;
-        row-gap: 20px;
+        gap: 20px;
+        /* row-gap: 20px; */
         text-align: center;
-        height: 10vh;
+        /* height: 10vh; */
+        max-width: 50vw;
+        margin: auto;
         font-weight: bold;
       }
-      @media (max-width: 650px) {
+      @media (max-width: 1000px) {
         .grid {
           grid-template-columns: 1fr;
         }
@@ -60,6 +83,10 @@
         gap: 5px;
         height: 35px;
         margin-top: 50px;
+      }
+      .desc button{
+        height: 32px;
+        font-weight: 700;
       }
     </style>
   </head>
@@ -90,13 +117,13 @@
     </nav>
     <body>
       <div class="desc">
-        <h1>Download UltraEdit for Windows</h1>
+        <span>Download <b>UltraEdit</b> for Windows</span>
         <p>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda,
           deleniti dolorem, minus modi sint incidunt sit, explicabo distinctio
           neque quidem blanditiis officia voluptates.
         </p>
-        <button>Download MAC or Linux Version</button>
+        <button class="button32">Download MAC or Linux Version</button>
         <h3>Download UltraEdit</h3>
       </div>
     </body>
